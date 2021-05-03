@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biglietto Treno</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+
+    <!-- Sezione inserimento dati da parte dell'utente -->
+    <h1>Calcola il prezzo del tuo biglietto</h1>
+    <div class="inputBox">
+        <div class="input_title">
+            <div>Nome Cognome</div>
+            <div>Km da percorrere</div>
+            <div>Fascia d'ètà</div>
+        </div>
+        <div class="top_input">
+            <input type="text" id="myInput" placeholder="Inserisci Nome">
+            <input type="text" id="myInput2" placeholder="Inserisci Km">
+            <select name="sesso" id="sesso">
+                <option value="maggiorenne">Maggiorenne</option>
+                <option value="minorenne">Minorenne</option>
+                <option value="over65">Over 65</option>
+            </select>
+        </div>
+        <div class="bottom_input">
+            <input type="submit" onclick="s1()" value="Genera">
+            <input type="submit" onclick="s2()" value="Reset">
+
+        </div>
+
+    </div>
+
+
+    <!-- Sezione in cui communico i risultati all'utente -->
+    <h1>Il tuo biglietto</h1>
+    <div class="outputBox">
+        <p>Dettaglio passeggeri</p>
+        <div class="box_dettagli">
+            <div class="passeggero">
+                <p>nome passegero</p>
+                <p id="nomepasseggero"></p>
+            </div>
+            <div class="box_dati">
+                <p>Offerta</p>
+                <p id="offerta"></p>
+            </div>
+            <div class="box_dati">
+                <p>carozza</p>
+                <p id="carozza"></p>
+            </div>
+            <div class="box_dati">
+                <p>codice CP</p>
+                <p id="codiceCP"></p>
+            </div>
+            <div class="box_dati">
+                <p>Costo biglietto</p>
+                <p id="costoBiglietto"></p>
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <script src="./assets//js/main.js"></script>
+</body>
+
+</html>
