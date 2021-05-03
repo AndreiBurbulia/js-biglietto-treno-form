@@ -12,8 +12,48 @@
 </head>
 
 <body>
+    <h1>Calcola il prezzo del tuo biglietto</h1>
+    <div class="inputBox">
+        <div class="top_input">
+            <input type="text" id="myInput" placeholder="Inserisci Nome">
+            <input type="text" id="myInput2" placeholder="Inserisci Km">
+            <select name="sesso" id="sesso">
+                <option value="maggiorenne">Maggiorenne</option>
+                <option value="minorenne">Minorenne</option>
+                <option value="over65">Over 65</option>
+            </select>
+        </div>
+        <div class="bottom_input">
+            <input type="submit" onclick="s1()" value="Genera">
+            <input type="submit" onclick="s2()" value="Reset">
 
+        </div>
 
+    </div>
+
+    <h1>Il tuo biglietto</h1>
+    <div class="outputBox">
+        <p>Dettaglio passeggeri</p>
+        <div class="box_dettagli">
+            <div class="passeggero">
+                nome passegero
+            </div>
+            <div class="box_dati">
+                Offerta
+            </div>
+            <div class="box_dati">
+                carozza
+            </div>
+            <div class="box_dati">
+                codice CP
+            </div>
+            <div class="box_dati">
+                Costo biglietto
+            </div>
+
+        </div>
+
+    </div>
 
 
 

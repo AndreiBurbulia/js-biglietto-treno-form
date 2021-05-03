@@ -1,0 +1,56 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: lightcoral;
+    text-align: center;
+}
+
+.inputBox{
+    background-color: white;
+    height: 300px;
+    width: 70%;
+    margin: 2rem auto;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.top_input{
+    margin-bottom: 3rem;
+}
+.top_input input,
+.top_input select{
+    margin: 0 3rem;
+    width: 300px;
+    height: 40px;
+    border-radius: 10px;
+}
+
+.bottom_input input{
+    color: red;
+    padding: 1rem;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 1rem;
+    margin: 0 1rem;
+}
+
+
+.outputBox{
+    height: 300px;
+    width: 70%;
+    margin: 0 auto;
+    background-color: white;
+}
+
+.box_dettagli{
+    display: flex;
+
+}
