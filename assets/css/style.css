@@ -9,6 +9,11 @@ body{
     text-align: center;
 }
 
+h1 {
+    font-size: 3rem;
+    text-transform: uppercase;
+    margin-top: 2rem;
+}
 .inputBox{
     background-color: white;
     height: 300px;
@@ -21,6 +26,15 @@ body{
     align-items: center;
     
 }
+.input_title{
+    width: 70%;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 1.5rem;
+    color: purple;
+}
 
 .top_input{
     margin-bottom: 3rem;
@@ -32,7 +46,9 @@ body{
     height: 40px;
     border-radius: 10px;
 }
-
+.top_input input::placeholder{
+    text-align: center;
+}
 .bottom_input input{
     color: red;
     padding: 1rem;
@@ -46,11 +62,34 @@ body{
 .outputBox{
     height: 300px;
     width: 70%;
-    margin: 0 auto;
+    margin: 1rem auto;
     background-color: white;
 }
-
+.outputBox>p{
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding-top: 1rem;
+}
 .box_dettagli{
     display: flex;
+    justify-content: space-around;
+}
 
+.passeggero > p:first-child,
+ .box_dati > p:first-child{
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 2rem;
+    font-size: 2rem;
+}
+.passeggero > p:nth-child(2),
+ .box_dati > p:nth-child(2){
+     font-size: 1.5rem;
+     padding-top: 3rem;
+ }
+
+.box_dati:nth-of-type(5) p:last-child::after{
+    content: "\20AC";
+    padding-left: 0.5rem;
 }
